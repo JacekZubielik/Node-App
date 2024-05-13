@@ -2,26 +2,6 @@
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
 </p>
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
-
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
-
 ## Description
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
@@ -57,6 +37,144 @@ $ npm run test:e2e
 # test coverage
 $ npm run test:cov
 ```
+
+## Installing `standard-version`
+
+### As a local `npm run` script
+
+Install and add to `devDependencies`:
+
+```
+npm i --save-dev standard-version
+```
+
+Add an [`npm run` script](https://docs.npmjs.com/cli/run-script) to your `package.json`:
+
+```json
+{
+  "scripts": {
+    "release": "standard-version"
+  }
+}
+```
+
+Now you can use `npm run release` in place of `npm version`.
+
+This has the benefit of making your repo/package more portable, so that other developers can cut releases without having to globally install `standard-version` on their machine.
+
+### As global `bin`
+
+Install globally (add to your `PATH`):
+
+```
+npm i -g standard-version
+```
+
+Now you can use `standard-version` in place of `npm version`.
+
+This has the benefit of allowing you to use `standard-version` on any repo/package without adding a dev dependency to each one.
+
+### Using `npx`
+
+As of `npm@5.2.0`, `npx` is installed alongside `npm`. Using `npx` you can use `standard-version` without having to keep a `package.json` file by running: `npx standard-version`.
+
+This method is especially useful when using `standard-version` in non-JavaScript projects.
+
+## Configuration
+
+You can configure `standard-version` either by:
+
+1. Placing a `standard-version` stanza in your `package.json` (assuming
+   your project is JavaScript).
+2. Creating a `.versionrc`, `.versionrc.json` or `.versionrc.js`.
+  - If you are using a `.versionrc.js` your default export must be a configuration object, or a function returning a configuration object.
+
+Any of the command line parameters accepted by `standard-version` can instead
+be provided via configuration. Please refer to the [conventional-changelog-config-spec](https://github.com/conventional-changelog/conventional-changelog-config-spec/) for details on available configuration options.
+
+
+### Customizing CHANGELOG Generation
+
+By default (as of `6.0.0`), `standard-version` uses the [conventionalcommits preset](https://github.com/conventional-changelog/conventional-changelog/tree/master/packages/conventional-changelog-conventionalcommits).
+
+This preset:
+
+* Adheres closely to the [conventionalcommits.org](https://www.conventionalcommits.org)
+  specification.
+* Is highly configurable, following the configuration specification
+  [maintained here](https://github.com/conventional-changelog/conventional-changelog-config-spec).
+  * _We've documented these config settings as a recommendation to other tooling makers._
+
+There are a variety of dials and knobs you can turn related to CHANGELOG generation.
+
+As an example, suppose you're using GitLab, rather than GitHub, you might modify the following variables:
+
+* `commitUrlFormat`: the URL format of commit SHAs detected in commit messages.
+* `compareUrlFormat`: the URL format used to compare two tags.
+* `issueUrlFormat`: the URL format used to link to issues.
+
+Making these URLs match GitLab's format, rather than GitHub's.
+
+## CLI Usage
+
+> **NOTE:** To pass nested configurations to the CLI without defining them in the `package.json` use dot notation as the parameters `e.g. --skip.changelog`.
+
+### First Release
+
+To generate your changelog for your first release, simply do:
+
+```sh
+# npm run script
+npm run release -- --first-release
+# global bin
+standard-version --first-release
+# npx
+npx standard-version --first-release
+```
+
+This will tag a release **without bumping the version `bumpFiles`[1]()**.
+
+When you are ready, push the git tag and `npm publish` your first release. \o/
+
+### Cutting Releases
+
+If you typically use `npm version` to cut a new release, do this instead:
+
+```sh
+# npm run script
+npm run release
+# or global bin
+standard-version
+```
+
+As long as your git commit messages are conventional and accurate, you no longer need to specify the semver type - and you get CHANGELOG generation for free! \o/
+
+After you cut a release, you can push the new git tag and `npm publish` (or `npm publish --tag next`) when you're ready.
+
+### Release as a Pre-Release
+
+Use the flag `--prerelease` to generate pre-releases:
+
+Suppose the last version of your code is `1.0.0`, and your code to be committed has patched changes. Run:
+
+```bash
+# npm run script
+npm run release -- --prerelease
+```
+This will tag your version as: `1.0.1-0`.
+
+If you want to name the pre-release, you specify the name via `--prerelease <name>`.
+
+For example, suppose your pre-release should contain the `alpha` prefix:
+
+```bash
+# npm run script
+npm run release -- --prerelease alpha
+```
+
+This will tag the version as: `1.0.1-alpha.0`
+
+
 
 ## Support
 
