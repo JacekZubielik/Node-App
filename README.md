@@ -1,6 +1,7 @@
 [![CI](https://github.com/JacekZubielik/Node-App/actions/workflows/node.js.yml/badge.svg)](https://github.com/JacekZubielik/Node-App/actions/workflows/node.js.yml) [![Image](https://github.com/JacekZubielik/Node-App/actions/workflows/image.yml/badge.svg)](https://github.com/JacekZubielik/Node-App/actions/workflows/image.yml) [![Lint](https://github.com/JacekZubielik/Node-App/actions/workflows/lint.yml/badge.svg)](https://github.com/JacekZubielik/Node-App/actions/workflows/lint.yml) [![Release](https://github.com/JacekZubielik/Node-App/actions/workflows/release.yml/badge.svg)](https://github.com/JacekZubielik/Node-App/actions/workflows/release.yml)
 
 Release test 1 (Fix)
+Release test 2 (Fix)
 
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
