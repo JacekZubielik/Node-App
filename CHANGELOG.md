@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.8](https://github.com/JacekZubielik/Node-App/compare/v0.0.7...v0.0.8) (2024-05-13)
+
+
+### Bug Fixes
+
+* **node:** add typescript-estree ([d026ecc](https://github.com/JacekZubielik/Node-App/commit/d026eccb944bc6e63f2d151b4b9ef4bdf837296f))
+* **node:** bump node 18 ([db1f117](https://github.com/JacekZubielik/Node-App/commit/db1f1171a31957effe066199dfd35865ef309dd8)), closes [#7](https://github.com/JacekZubielik/Node-App/issues/7)
+
 ### [0.0.7](https://github.com/JacekZubielik/Node-App/compare/v0.0.6...v0.0.7) (2024-05-13)
 
 
