@@ -28,20 +28,6 @@ jobs:
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
 
-      - name: Docker meta
-        id: meta
-        uses: docker/metadata-action@v5
-        with:
-          images: |
-            gorabbit/node-app
-            ghcr.io/jacekzubielik/node-app
-          tags: |
-            type=ref,event=branch
-            type=ref,event=pr
-            type=semver,pattern={{version}}
-          # type=sha
-          # type=schedule
-
       - name: Login to DockerHub
         if: github.event_name != 'pull_request'
         uses: docker/login-action@v3
@@ -56,12 +42,26 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Docker meta
+        id: meta
+        uses: docker/metadata-action@v5
+        with:
+          images: |
+            gorabbit/node-app
+            ghcr.io/jacekzubielik/node-app
+          tags: |
+            type=ref,event=branch
+            type=ref,event=pr
+            type=semver,pattern={{version}}
+          # type=sha
+          # type=schedule
+
       - name: Build and push
         uses: docker/build-push-action@v5
         with:
           context: .
           tags: ${{ steps.meta.outputs.tags }}
-          platforms: amd64 # arm64
+          platforms: amd64
           labels: ${{ steps.meta.outputs.labels }}
           push: ${{ github.event_name != 'pull_request' }}
           outputs: |
