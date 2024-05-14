@@ -1,3 +1,12 @@
+## [0.0.10](https://github.com/JacekZubielik/Node-App/compare/v0.0.9...v0.0.10) (2024-05-14)
+
+
+### Bug Fixes
+
+* **test:** test issue 2 ([88dbc23](https://github.com/JacekZubielik/Node-App/commit/88dbc234ed048255adb1c058d2e4168ca8e490a0)), closes [#11](https://github.com/JacekZubielik/Node-App/issues/11)
+
+
+
 ## [0.0.9](https://github.com/JacekZubielik/Node-App/compare/v0.0.8...v0.0.9) (2024-05-13)
 
 
