@@ -1,3 +1,13 @@
+## [0.0.14](https://github.com/JacekZubielik/Node-App/compare/v0.0.13...v0.0.14) (2024-05-14)
+
+
+### Bug Fixes
+
+* **release:** cHANGELOG.md ([ce62544](https://github.com/JacekZubielik/Node-App/commit/ce62544a626c3dbcc7a320825213cbfb12f8b516))
+* **test:** test fix1 ([0d9b750](https://github.com/JacekZubielik/Node-App/commit/0d9b750e6fc3d4c3da5d813dd51b61a9a044601b))
+
+
+
 ## [0.0.13](https://github.com/JacekZubielik/Node-App/compare/v0.0.12...v0.0.13) (2024-05-14)
 
 
