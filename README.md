@@ -5,7 +5,6 @@
 </p>
 
 Test issue 1
-Test issue 2
 
 ## Description
 
