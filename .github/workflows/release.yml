@@ -5,6 +5,10 @@ on:
   push:
     tags:
         - v[0-9]+.*
+  pull_request:
+    branches: [main,issue-*,dev-*]
+    types:
+      - closed
 
   workflow_dispatch:
 
@@ -55,12 +59,12 @@ jobs:
         uses: softprops/action-gh-release@v2
         if: ${{ steps.changelog.outputs.skipped == 'false' }}
         with:
-          body_path: ./CHANGELOG.md
+          # body_path: ./CHANGELOG.md
           token: ${{ secrets.CHANGELOG_TOKEN }}
           tag_name: ${{ steps.changelog.outputs.tag }}
           body: ${{ steps.changelog.outputs.clean_changelog }}
-      #     files: |
-      #         ./CHANGELOG.md
+          files: |
+              ./CHANGELOG.md
 
   image:
     runs-on: [ubuntu-latest]
