@@ -42,7 +42,6 @@ jobs:
           output-file: "CHANGELOG.md"
           version-file: ./package.json
           preset: 'angular'
-          # preset: "conventionalcommits"
           release-count: 0
 
       # - name: Create Release
