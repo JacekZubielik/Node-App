@@ -41,26 +41,26 @@ jobs:
           # preset: "conventionalcommits"
           release-count: 0
 
-      # - name: Create Release
-      #   uses: actions/create-release@v1
-      #   if: ${{ steps.changelog.outputs.skipped == 'false' }}
-      #   env:
-      #     GITHUB_TOKEN: ${{ secrets.github_token }}
-      #   with:
-      #     tag_name: ${{ steps.changelog.outputs.tag }}
-      #     release_name: ${{ steps.changelog.outputs.tag }}
-      #     body: ${{ steps.changelog.outputs.clean_changelog }}
-
       - name: Create Release
-        uses: softprops/action-gh-release@v2
+        uses: actions/create-release@v1
         if: ${{ steps.changelog.outputs.skipped == 'false' }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.github_token }}
         with:
-          body_path: ./CHANGELOG.txt
-          token: ${{ secrets.CHANGELOG_TOKEN }}
           tag_name: ${{ steps.changelog.outputs.tag }}
+          release_name: ${{ steps.changelog.outputs.tag }}
           body: ${{ steps.changelog.outputs.clean_changelog }}
-          files: |
-              ./CHANGELOG.md
+
+      # - name: Create Release
+      #   uses: softprops/action-gh-release@v2
+      #   if: ${{ steps.changelog.outputs.skipped == 'false' }}
+      #   with:
+      #     body_path: ./CHANGELOG.txt
+      #     token: ${{ secrets.CHANGELOG_TOKEN }}
+      #     tag_name: ${{ steps.changelog.outputs.tag }}
+      #     body: ${{ steps.changelog.outputs.clean_changelog }}
+      #     files: |
+      #         ./CHANGELOG.md
 
   image:
     runs-on: [ubuntu-latest]
