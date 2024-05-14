@@ -83,9 +83,9 @@ jobs:
             gorabbit/node-app
             # ghcr.io/jacekzubielik/node-app
           tags: |
-            type=ref,event=branch
-            type=ref,event=pr
             type=semver,pattern={{version}}
+          # type=ref,event=branch
+          # type=ref,event=pr
           # type=sha
           # type=schedule
         env:
