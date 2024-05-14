@@ -1,3 +1,12 @@
+## [0.0.16](https://github.com/JacekZubielik/Node-App/compare/v0.0.15...v0.0.16) (2024-05-14)
+
+
+### Bug Fixes
+
+* **release:** test fix ([4ac3273](https://github.com/JacekZubielik/Node-App/commit/4ac32738c267912a212db772e45c4e3cd924d6dd))
+
+
+
 ## [0.0.15](https://github.com/JacekZubielik/Node-App/compare/v0.0.14...v0.0.15) (2024-05-14)
 
 
