@@ -1,3 +1,12 @@
+## [0.0.17](https://github.com/JacekZubielik/Node-App/compare/v0.0.16...v0.0.17) (2024-05-14)
+
+
+### Bug Fixes
+
+* **tags:** disable selected tags ([f94b724](https://github.com/JacekZubielik/Node-App/commit/f94b724de0d6fb25ee32026dd38399f08683d949))
+
+
+
 ## [0.0.16](https://github.com/JacekZubielik/Node-App/compare/v0.0.15...v0.0.16) (2024-05-14)
 
 
