@@ -39,7 +39,7 @@ jobs:
           # type=sha
           # type=schedule
         env:
-          DOCKER_METADATA_ANNOTATIONS_LEVELS: manifest,index
+          DOCKER_METADATA_ANNOTATIONS_LEVELS: manifest,index,manifest-descriptor,index-descriptor
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
