@@ -1,3 +1,14 @@
+# Changelog
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+### [0.0.11](https://github.com/JacekZubielik/Node-App/compare/v0.0.10...v0.0.11) (2024-05-14)
+
+
+### Bug Fixes
+
+* **release:** test issue 1 ([acfc630](https://github.com/JacekZubielik/Node-App/commit/acfc63098e47c1a84da5490508ed4911c56c63ce)), closes [#11](https://github.com/JacekZubielik/Node-App/issues/11)
+
 ## [0.0.10](https://github.com/JacekZubielik/Node-App/compare/v0.0.9...v0.0.10) (2024-05-14)
 
 
@@ -86,6 +97,3 @@
 
 
 ## 0.0.1 (2024-05-13)
-
-
-
