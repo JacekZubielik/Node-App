@@ -17,6 +17,11 @@ permissions:
 
 jobs:
   image:
+
+    permissions:
+      contents: write
+      packages: write
+
     runs-on: [ubuntu-latest]
 
     steps:
@@ -31,7 +36,7 @@ jobs:
         with:
           images: |
             gorabbit/node-app
-            # ghcr.io/jacekzubielik/node-app
+          # ghcr.io/jacekzubielik/node-app
           tags: |
             type=ref,event=branch
             type=ref,event=pr
