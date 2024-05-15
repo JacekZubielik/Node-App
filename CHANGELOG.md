@@ -1,3 +1,12 @@
+## [0.0.24](https://github.com/JacekZubielik/Node-App/compare/v0.0.23...v0.0.24) (2024-05-15)
+
+
+### Bug Fixes
+
+* **workflow:** add ghcr registry ([51f03ef](https://github.com/JacekZubielik/Node-App/commit/51f03ef3c676ba612b50244dc3e49de3183aa9ea))
+
+
+
 ## [0.0.23](https://github.com/JacekZubielik/Node-App/compare/v0.0.22...v0.0.23) (2024-05-15)
 
 
