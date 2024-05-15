@@ -13,11 +13,13 @@ on:
   workflow_dispatch:
 
 permissions:
+  packages: write
   contents: write
 
 jobs:
   release:
     name: Release
+
     permissions:
       contents: write
       issues: write
@@ -60,7 +62,6 @@ jobs:
         uses: softprops/action-gh-release@v2
         if: ${{ steps.changelog.outputs.skipped == 'false' }}
         with:
-          # body_path: ./CHANGELOG.md
           token: ${{ secrets.CHANGELOG_TOKEN }}
           tag_name: ${{ steps.changelog.outputs.tag }}
           body: ${{ steps.changelog.outputs.clean_changelog }}
@@ -72,7 +73,7 @@ jobs:
     needs: [release]
 
     permissions:
-      contents: read
+      contents: write
       packages: write
 
     steps:
@@ -90,8 +91,8 @@ jobs:
           # ghcr.io/jacekzubielik/node-app
           tags: |
             type=semver,pattern={{version}}
-          # type=ref,event=branch
-          # type=ref,event=pr
+            type=ref,event=branch
+            type=ref,event=pr
           # type=sha
           # type=schedule
         env:
