@@ -1,3 +1,17 @@
+# [2.0.0](https://github.com/JacekZubielik/Node-App/compare/v1.0.0...v2.0.0) (2024-05-15)
+
+
+### Build System
+
+* **npm:** update --save ([6087a22](https://github.com/JacekZubielik/Node-App/commit/6087a22a8356458985d5ff610504ec01e0e544b0))
+
+
+### BREAKING CHANGES
+
+* **npm:** update all the packages listed to the latest version
+
+
+
 # [1.0.0](https://github.com/JacekZubielik/Node-App/compare/v0.0.24...v1.0.0) (2024-05-15)
 
 
