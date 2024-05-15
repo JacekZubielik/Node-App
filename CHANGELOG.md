@@ -1,9 +1,25 @@
-## [0.0.25](https://github.com/JacekZubielik/Node-App/compare/v0.0.24...v0.0.25) (2024-05-15)
+# [1.0.0](https://github.com/JacekZubielik/Node-App/compare/v0.0.24...v1.0.0) (2024-05-15)
 
 
 ### Bug Fixes
 
-* **test:** test fix1 ([baf8cab](https://github.com/JacekZubielik/Node-App/commit/baf8cab7394be03dd7574cf4557251ca2b917e23))
+* **test:** test fix1 ([9902015](https://github.com/JacekZubielik/Node-App/commit/99020152f861c8e90dcd33ef37f49cae30cb229f))
+* **test:** test fix2 ([6642363](https://github.com/JacekZubielik/Node-App/commit/66423638bc8b8e1e01f6bda47e098003afd77523))
+
+
+### Features
+
+* **up:** test fix1 up ([c858092](https://github.com/JacekZubielik/Node-App/commit/c858092fb3af65e1724d29f6ab2b1d1f7befe8be)), closes [#11](https://github.com/JacekZubielik/Node-App/issues/11)
+
+
+### Performance Improvements
+
+* **npm:** update ([1d5ee31](https://github.com/JacekZubielik/Node-App/commit/1d5ee313f70deca04ddc982d167f5e300f036b04))
+
+
+### BREAKING CHANGES
+
+* **up:** up test readme.md
 
 
 
