@@ -6,7 +6,7 @@
 
 
 <!-- Test fix1 -->
-Test fix2
+<!-- Test fix2 -->
 ## Description
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
