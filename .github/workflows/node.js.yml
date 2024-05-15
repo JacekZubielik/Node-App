@@ -3,7 +3,7 @@ name: CI
 
 on:
   push:
-    branches: [main,issue-*]
+    branches: [main,issue-*,dev-*]
     paths-ignore:
       - '**.md'
       - './github/*'
