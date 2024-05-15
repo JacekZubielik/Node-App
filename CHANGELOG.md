@@ -1,3 +1,12 @@
+## [0.0.22](https://github.com/JacekZubielik/Node-App/compare/v0.0.21...v0.0.22) (2024-05-15)
+
+
+### Bug Fixes
+
+* **workflow:** test attestation ([8de7c89](https://github.com/JacekZubielik/Node-App/commit/8de7c89c841bad7adaef64a8ad6957f5163d32f4))
+
+
+
 ## [0.0.21](https://github.com/JacekZubielik/Node-App/compare/v0.0.20...v0.0.21) (2024-05-15)
 
 
