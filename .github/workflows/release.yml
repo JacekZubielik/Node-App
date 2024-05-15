@@ -64,7 +64,7 @@ jobs:
         with:
           token: ${{ secrets.CHANGELOG_TOKEN }}
           tag_name: ${{ steps.changelog.outputs.tag }}
-          body: ${{ steps.changelog.outputs.clean_changelog }}
+          body: ${{ steps.changelog.outputs.changelog }}
           files: |
               ./CHANGELOG.md
 
