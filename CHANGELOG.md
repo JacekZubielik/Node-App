@@ -1,3 +1,12 @@
+## [0.0.19](https://github.com/JacekZubielik/Node-App/compare/v0.0.18...v0.0.19) (2024-05-15)
+
+
+### Bug Fixes
+
+* **workflow:** permissions ([f56a757](https://github.com/JacekZubielik/Node-App/commit/f56a757bf99ad794f935b529def489103517ff32))
+
+
+
 ## [0.0.18](https://github.com/JacekZubielik/Node-App/compare/v0.0.17...v0.0.18) (2024-05-15)
 
 
