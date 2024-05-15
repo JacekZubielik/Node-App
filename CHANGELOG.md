@@ -1,16 +1,15 @@
-# Changelog
-
-All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
-
-### [0.0.20](https://github.com/JacekZubielik/Node-App/compare/v0.0.16...v0.0.20) (2024-05-15)
+## [0.0.21](https://github.com/JacekZubielik/Node-App/compare/v0.0.20...v0.0.21) (2024-05-15)
 
 
 ### Bug Fixes
 
-* **tags:** disable selected tags ([f94b724](https://github.com/JacekZubielik/Node-App/commit/f94b724de0d6fb25ee32026dd38399f08683d949))
-* **worflow:** add permissions ([8bc646c](https://github.com/JacekZubielik/Node-App/commit/8bc646cd84370f1dea1e4dd61233cd2987a7429f))
-* **workflow:** add permissions ([1545e81](https://github.com/JacekZubielik/Node-App/commit/1545e813260b9d319ea1106934db0ea8206f26d0))
-* **workflow:** permissions ([f56a757](https://github.com/JacekZubielik/Node-App/commit/f56a757bf99ad794f935b529def489103517ff32))
+* **workflow:** swap outputs from clean_changelog to changelog ([dae8eb3](https://github.com/JacekZubielik/Node-App/commit/dae8eb3eb61fe0ba13f2cea594241f30fd0336eb))
+
+
+
+## [0.0.20](https://github.com/JacekZubielik/Node-App/compare/v0.0.19...v0.0.20) (2024-05-15)
+
+
 
 ## [0.0.19](https://github.com/JacekZubielik/Node-App/compare/v0.0.18...v0.0.19) (2024-05-15)
 
@@ -183,3 +182,6 @@ All notable changes to this project will be documented in this file. See [standa
 
 
 ## 0.0.1 (2024-05-13)
+
+
+
