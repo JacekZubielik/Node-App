@@ -1,3 +1,12 @@
+## [0.0.23](https://github.com/JacekZubielik/Node-App/compare/v0.0.22...v0.0.23) (2024-05-15)
+
+
+### Bug Fixes
+
+* **workflow:** add id to build and push step ([014ebfd](https://github.com/JacekZubielik/Node-App/commit/014ebfd6b23923f93ead39d371e942076cad18c8))
+
+
+
 ## [0.0.22](https://github.com/JacekZubielik/Node-App/compare/v0.0.21...v0.0.22) (2024-05-15)
 
 
