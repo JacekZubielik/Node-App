@@ -6,8 +6,10 @@ on:
     tags:
         - v[0-9]+.*
 
-  pull_request:
-    branches: [main,issue-*,dev-*]
+  # pull_request:
+  #   branches: [main,issue-*,dev-*]
+  #   types:
+  #     - closed
 
   workflow_dispatch:
 
@@ -47,22 +49,8 @@ jobs:
           # gorabbit/node-app
           tags: |
             type=semver,pattern={{version}}
-            type=semver,pattern={{major}}.{{minor}}.{{patch}}
-            type=ref,event=tag
             type=ref,event=branch
             type=ref,event=pr
-
-      # - name: Docker meta
-      #   id: meta
-      #   uses: docker/metadata-action@v5
-      #   with:
-      #     images: |
-      #       ghcr.io/jacekzubielik/node-app
-      #     # gorabbit/node-app
-      #     tags: |
-      #       type=semver,pattern={{version}}
-      #       type=ref,event=branch
-      #       type=ref,event=pr
       #   env:
       #     DOCKER_METADATA_ANNOTATIONS_LEVELS: manifest,index,manifest-descriptor,index-descriptor
 
