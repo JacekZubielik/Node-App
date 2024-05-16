@@ -1,3 +1,12 @@
+## [2.1.3](https://github.com/JacekZubielik/Node-App/compare/v2.1.2...v2.1.3) (2024-05-16)
+
+
+### Bug Fixes
+
+* **tags:** manual release ([eeff921](https://github.com/JacekZubielik/Node-App/commit/eeff921369fc6884f1536de11fc751217950b22a))
+
+
+
 ## [2.1.2](https://github.com/JacekZubielik/Node-App/compare/v2.1.1...v2.1.2) (2024-05-16)
 
 
