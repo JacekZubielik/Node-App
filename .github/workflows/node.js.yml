@@ -20,7 +20,8 @@ on:
 jobs:
   build:
     name: Build
-    runs-on: [ubuntu-latest]
+    # runs-on: [ubuntu-latest]
+    runs-on: [amd64-6core-32gb]
 
     strategy:
       matrix:
