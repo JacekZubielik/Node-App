@@ -7,13 +7,9 @@ on:
         - v[0-9]+.*
 
   pull_request:
-    branches: [main]
+    branches: [main,issue-*,dev-*]
 
   workflow_dispatch:
-
-permissions:
-  packages: write
-  contents: read
 
 jobs:
   image:
