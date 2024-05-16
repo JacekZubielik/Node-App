@@ -1,3 +1,12 @@
+## [2.1.2](https://github.com/JacekZubielik/Node-App/compare/v2.1.1...v2.1.2) (2024-05-16)
+
+
+### Bug Fixes
+
+* **ghcr:** add github token ([49b2948](https://github.com/JacekZubielik/Node-App/commit/49b294860175410aa32549e01aac14b841295d13))
+
+
+
 ## [2.1.1](https://github.com/JacekZubielik/Node-App/compare/v2.1.0...v2.1.1) (2024-05-16)
 
 
