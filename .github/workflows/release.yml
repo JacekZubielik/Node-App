@@ -19,6 +19,7 @@ permissions:
 jobs:
   release:
     name: Release
+    runs-on: [self-hosted]
 
     permissions:
       contents: write
@@ -27,8 +28,6 @@ jobs:
       packages: write
       id-token: write
       # attestations: write
-
-    runs-on: [ubuntu-latest]
 
     steps:
       - name: Checkout code
@@ -71,7 +70,7 @@ jobs:
               ./CHANGELOG.md
 
   image:
-    runs-on: [ubuntu-latest]
+    runs-on: [self-hosted]
     needs: [release]
 
     permissions:
