@@ -1,3 +1,12 @@
+## [2.1.4](https://github.com/JacekZubielik/Node-App/compare/v2.1.3...v2.1.4) (2024-05-16)
+
+
+### Bug Fixes
+
+* **tag:** tag test ([1dd246e](https://github.com/JacekZubielik/Node-App/commit/1dd246ebcee19c82635fbf34726a2d2d1ff57c65))
+
+
+
 ## [2.1.3](https://github.com/JacekZubielik/Node-App/compare/v2.1.2...v2.1.3) (2024-05-16)
 
 
