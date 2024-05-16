@@ -1,3 +1,12 @@
+# [2.1.0](https://github.com/JacekZubielik/Node-App/compare/v2.0.0...v2.1.0) (2024-05-16)
+
+
+### Features
+
+* **npm:** upgrade npm packages ([1932b48](https://github.com/JacekZubielik/Node-App/commit/1932b48fcdde72dd265a7032d88f2bcb834743a1))
+
+
+
 # [2.0.0](https://github.com/JacekZubielik/Node-App/compare/v1.0.0...v2.0.0) (2024-05-15)
 
 
