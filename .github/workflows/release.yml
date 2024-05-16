@@ -59,21 +59,20 @@ jobs:
         if: ${{ steps.changelog.outputs.skipped == 'false' }}
         with:
           token: ${{ secrets.CHANGELOG_TOKEN }}
-          # tag_name: ${{ steps.changelog.outputs.tag }}
           tag_name: ${{ steps.changelog.outputs.tag }}
           body: ${{ steps.changelog.outputs.changelog }}
           files: |
               ./CHANGELOG.md
 
-  image:
-    runs-on: [self-hosted]
-    # needs: [release]
+  # image:
+  #   runs-on: [self-hosted]
+  #   # needs: [release]
 
-    permissions:
-      contents: write
-      packages: write
+  #   permissions:
+  #     contents: write
+  #     packages: write
 
-    steps:
+  #   steps:
       - name: Checkout code
         uses: actions/checkout@v4
         with:
@@ -101,7 +100,6 @@ jobs:
           # gorabbit/node-app
           tags: |
             type=semver,pattern={{version}}
-            type=semver,pattern={{major}}.{{minor}}.{{patch}}
             type=ref,enable=true,event=tag
           # type=ref,event=branch
           # type=ref,event=pr
@@ -109,6 +107,9 @@ jobs:
           # type=schedule
         # env:
         #   DOCKER_METADATA_ANNOTATIONS_LEVELS: manifest,index,manifest-descriptor,index-descriptor
+          flavor: |
+            latest=auto
+            prefix=v
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
