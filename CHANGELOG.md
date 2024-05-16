@@ -1,3 +1,12 @@
+## [2.1.1](https://github.com/JacekZubielik/Node-App/compare/v2.1.0...v2.1.1) (2024-05-16)
+
+
+### Bug Fixes
+
+* **workflow:** fix ghcr image push ([fb95a76](https://github.com/JacekZubielik/Node-App/commit/fb95a76871b53c5aa4a7ed5303afe279a7b07e5b))
+
+
+
 # [2.1.0](https://github.com/JacekZubielik/Node-App/compare/v2.0.0...v2.1.0) (2024-05-16)
 
 
