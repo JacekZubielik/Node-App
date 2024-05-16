@@ -27,7 +27,6 @@ jobs:
       pull-requests: write
       packages: write
       id-token: write
-      # attestations: write
 
     steps:
       - name: Checkout code
@@ -102,7 +101,7 @@ jobs:
         with:
           images: |
             gorabbit/node-app
-          # ghcr.io/jacekzubielik/node-app
+            ghcr.io/jacekzubielik/node-app
           tags: |
             type=semver,pattern={{version}}
             type=ref,event=branch
@@ -135,10 +134,3 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
           repository: gorabbit/node-app
           readme-filepath: ./README.md
-
-      # - name: Generate artifact attestation
-      #   uses: actions/attest-build-provenance@v1
-      #   with:
-      #     subject-name: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME}}
-      #     subject-digest: ${{ steps.push.outputs.digest }}
-      #     push-to-registry: true
