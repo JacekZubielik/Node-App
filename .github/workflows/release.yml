@@ -100,8 +100,10 @@ jobs:
           # gorabbit/node-app
           tags: |
             type=semver,pattern={{version}}
-          # type=ref,event=branch
-          # type=ref,event=pr
+            type=semver,pattern={{major}}.{{minor}}.{{patch}}
+            type=ref,event=tag
+            type=ref,event=branch
+            type=ref,event=pr
           # type=sha
           # type=schedule
         # env:
