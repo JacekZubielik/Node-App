@@ -20,7 +20,7 @@ jobs:
   release:
     name: Release
     # runs-on: [ubuntu-latest]
-    runs-on: [amd64-6core-32gb]
+    runs-on: [self-hosted]
 
     permissions:
       contents: write
