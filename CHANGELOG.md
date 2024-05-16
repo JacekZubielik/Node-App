@@ -1,3 +1,12 @@
+## [2.1.5](https://github.com/JacekZubielik/Node-App/compare/v2.1.4...v2.1.5) (2024-05-16)
+
+
+### Bug Fixes
+
+* **tags:** semver only ([fdcccb0](https://github.com/JacekZubielik/Node-App/commit/fdcccb0ef835892a12e8164c024abc0a52cd4e32))
+
+
+
 ## [2.1.4](https://github.com/JacekZubielik/Node-App/compare/v2.1.3...v2.1.4) (2024-05-16)
 
 
