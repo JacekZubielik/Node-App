@@ -37,7 +37,7 @@ jobs:
           github-token: ${{ secrets.CHANGELOG_TOKEN }}
           git-message: 'chore(release): {version}'
           tag-prefix: 'v'
-          # skip-git-pull: "true"
+          skip-git-pull: "true"
           skip-on-empty: "true"
           output-file: "CHANGELOG.md"
           version-file: ./package.json
@@ -59,6 +59,7 @@ jobs:
         if: ${{ steps.changelog.outputs.skipped == 'false' }}
         with:
           token: ${{ secrets.CHANGELOG_TOKEN }}
+          # tag_name: ${{ steps.changelog.outputs.tag }}
           tag_name: ${{ steps.changelog.outputs.tag }}
           body: ${{ steps.changelog.outputs.changelog }}
           files: |
