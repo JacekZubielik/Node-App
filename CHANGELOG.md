@@ -1,3 +1,12 @@
+## [2.1.10](https://github.com/JacekZubielik/Node-App/compare/v2.1.9...v2.1.10) (2024-05-17)
+
+
+### Bug Fixes
+
+* **ci:** push tags filter ([02e5d09](https://github.com/JacekZubielik/Node-App/commit/02e5d098804f93367834a60f14f40354f75cce9a))
+
+
+
 ## [2.1.9](https://github.com/JacekZubielik/Node-App/compare/v2.1.8...v2.1.9) (2024-05-17)
 
 
