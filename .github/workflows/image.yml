@@ -4,7 +4,8 @@ name: Image
 on:
   push:
     tags:
-        - v[0-9]+.*
+        - "v*.*.*"
+        # - v[0-9]+.*
 
   pull_request:
     branches: [issue-*,dev-*]
