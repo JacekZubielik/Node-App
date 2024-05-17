@@ -2,11 +2,6 @@
 name: Image
 
 on:
-  push:
-    tags:
-        - "v*.*.*"
-        # - v[0-9]+.*
-
   release:
     types: [published]
         
@@ -49,8 +44,8 @@ jobs:
             type=semver,pattern={{version}}
             type=ref,event=branch
             type=ref,event=pr
-      #   env:
-      #     DOCKER_METADATA_ANNOTATIONS_LEVELS: manifest,index,manifest-descriptor,index-descriptor
+        env:
+          DOCKER_METADATA_ANNOTATIONS_LEVELS: manifest,index,manifest-descriptor,index-descriptor
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
@@ -63,14 +58,6 @@ jobs:
           annotations: ${{ steps.meta.outputs.annotations }}
           platforms: linux/amd64
           labels: ${{ steps.meta.outputs.labels }}
-          push: true # ${{ github.event_name != 'pull_request' }}
+          push: true
           outputs: |
             type=image,name=target
-
-      # - name: Docker Hub Description
-      #   uses: peter-evans/dockerhub-description@v4
-      #   with:
-      #     username: ${{ secrets.DOCKERHUB_USERNAME }}
-      #     password: ${{ secrets.DOCKERHUB_TOKEN }}
-      #     repository: gorabbit/node-app
-      #     readme-filepath: ./README.md
