@@ -1,3 +1,12 @@
+## [2.1.9](https://github.com/JacekZubielik/Node-App/compare/v2.1.8...v2.1.9) (2024-05-17)
+
+
+### Bug Fixes
+
+* **ci:** pull request on issue and dev branch only ([ce7ff47](https://github.com/JacekZubielik/Node-App/commit/ce7ff47becafdf066bfd99d55f2f9aa49fc13cfe))
+
+
+
 ## [2.1.8](https://github.com/JacekZubielik/Node-App/compare/v2.1.7...v2.1.8) (2024-05-17)
 
 
