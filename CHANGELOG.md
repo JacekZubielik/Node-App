@@ -1,3 +1,12 @@
+## [2.1.8](https://github.com/JacekZubielik/Node-App/compare/v2.1.7...v2.1.8) (2024-05-17)
+
+
+### Bug Fixes
+
+* **workflow:** code clean up ([934bda7](https://github.com/JacekZubielik/Node-App/commit/934bda76b2be3ee37ee09169754cd3aaeccabf30)), closes [#38](https://github.com/JacekZubielik/Node-App/issues/38)
+
+
+
 ## [2.1.7](https://github.com/JacekZubielik/Node-App/compare/v2.1.6...v2.1.7) (2024-05-16)
 
 
