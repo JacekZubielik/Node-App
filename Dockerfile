@@ -1,9 +1,10 @@
 FROM node:alpine
 
-LABEL org.opencontainers.image.authors="JacekZubielik" \
-      org.opencontainers.image.description="node-app" \
-      org.opencontainers.image.source="https://github.com/jacekzubielik/node-app"
+ENTRYPOINT ["echo", "Hello from ${{ github.repository }}!"]
 
+LABEL org.opencontainers.image.authors="JacekZubielik" \
+      org.opencontainers.image.description="Node-app. This image was built from commit ${{ github.sha }}" \
+      org.opencontainers.image.source="https://github.com/jacekzubielik/node-app"
 
 WORKDIR /app
 
