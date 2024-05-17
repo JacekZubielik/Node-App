@@ -1,3 +1,12 @@
+## [2.1.12](https://github.com/JacekZubielik/Node-App/compare/v2.1.11...v2.1.12) (2024-05-17)
+
+
+### Bug Fixes
+
+* **ci:** release image ([8996731](https://github.com/JacekZubielik/Node-App/commit/8996731b704133ca791ea0d1220fc904b8d82264)), closes [#38](https://github.com/JacekZubielik/Node-App/issues/38)
+
+
+
 ## [2.1.11](https://github.com/JacekZubielik/Node-App/compare/v2.1.10...v2.1.11) (2024-05-17)
 
 
