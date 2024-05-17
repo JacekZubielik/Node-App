@@ -7,8 +7,6 @@ on:
     paths-ignore:
       - '**.md'
       - './github/*'
-    tags:
-      - v[0-9]+.*
 
   pull_request:
     branches: [main,issue-*,dev-*]
