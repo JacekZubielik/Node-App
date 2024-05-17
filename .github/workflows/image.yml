@@ -22,6 +22,11 @@ jobs:
       packages: write
 
     steps:
+      - name: Create a Dockerfile
+        run: |
+          echo 'ENTRYPOINT ["echo", "Hello from ${{ github.repository }}!"]' >> Dockerfile
+          echo 'LABEL org.opencontainers.image.description "This image was built from commit ${{ github.sha }}"' >> Dockerfile
+
       - name: Checkout code
         uses: actions/checkout@v4
         with:
