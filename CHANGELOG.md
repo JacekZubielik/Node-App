@@ -1,3 +1,12 @@
+## [2.1.13](https://github.com/JacekZubielik/Node-App/compare/v2.1.12...v2.1.13) (2024-05-23)
+
+
+### Bug Fixes
+
+* **docker:** expose port ([241adaf](https://github.com/JacekZubielik/Node-App/commit/241adafa5ec59b97a8947418c5b2b1c8ba57dc29))
+
+
+
 ## [2.1.12](https://github.com/JacekZubielik/Node-App/compare/v2.1.11...v2.1.12) (2024-05-17)
 
 
