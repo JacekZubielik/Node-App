@@ -1,3 +1,12 @@
+# [2.2.0](https://github.com/JacekZubielik/Node-App/compare/v2.1.13...v2.2.0) (2024-05-29)
+
+
+### Features
+
+* **healthcheck:** add health endpoint ([fa178a8](https://github.com/JacekZubielik/Node-App/commit/fa178a89598ac9f875ef80f169190feb9a13c66a))
+
+
+
 ## [2.1.13](https://github.com/JacekZubielik/Node-App/compare/v2.1.12...v2.1.13) (2024-05-23)
 
 
