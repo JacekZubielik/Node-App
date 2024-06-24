@@ -1,3 +1,12 @@
+## [2.2.1](https://github.com/JacekZubielik/Node-App/compare/v2.2.0...v2.2.1) (2024-06-24)
+
+
+### Bug Fixes
+
+* **deps:** update nest monorepo to v10.3.9 ([9754d6c](https://github.com/JacekZubielik/Node-App/commit/9754d6c01c4111b34245b7ffc0ba522b35379172))
+
+
+
 # [2.2.0](https://github.com/JacekZubielik/Node-App/compare/v2.1.13...v2.2.0) (2024-05-29)
 
 
